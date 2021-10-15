@@ -1,0 +1,12 @@
+.weather__card__item__minmaxTemp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather__card__item__minmaxTemp--details {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

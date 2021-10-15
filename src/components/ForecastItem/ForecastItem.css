@@ -1,0 +1,13 @@
+.forecast__content__list__item {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.forecast__content__list__item--content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
