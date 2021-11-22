@@ -5,13 +5,13 @@ export function ForecastItem({ data }) {
 	const tempMin = Math.floor(data.tempMin);
 	const tempMax = Math.floor(data.tempMax);
 	const icon = data.icon;
-	const url = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+	// const url = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 	const description = data.description;
 
 	return (
 		<li className='forecast__content__list__item'>
 			<h3>{day}</h3>
-			<img src={url} alt={description} />
+			<img src={`/${icon}.svg`} alt={description} />
 			<div className='forecast__content__list__item--content'>
 				<span>
 					<svg width='15' height='15' viewBox='0 0 16 21' fill='#60d5e9'>

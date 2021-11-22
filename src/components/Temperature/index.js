@@ -7,10 +7,8 @@ export function Temperature() {
 	const { state } = useContext(AppContext);
 	const temperature = Math.floor(state.dataWeather.main.temp);
 	const icon = state.dataWeather.weather[0].icon;
-	const url = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+	// const url = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 	const description = state.dataWeather.weather[0].description;
-
-	// <img src={`${urlBase}${icon}.svg`} alt={description} />;
 
 	return (
 		<div className='weather__card__item'>
@@ -36,7 +34,7 @@ export function Temperature() {
 				</span>
 			</div>
 			<div className='weather__card__item--temperature'>
-				<img src={url} alt={description} />
+				<img src={`/${icon}.svg`} alt={description} />
 			</div>
 		</div>
 	);
